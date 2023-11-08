@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+
+/* form styling */
+
+body {
+	font-family: Arial, Helvetica, sans-serif; /* Set font for entire page to sans-serif */
+}
+
+#wrapper {
+	width: 60%;
+	margin-left:4%;
+}
+
+div#formcol1 {
+	float:left;	
+	width: 100%;
+}
+
+label {
+	margin-right: .3em;
+	width: 5.8em; /* I made this deliberately wide – come up with your own optimal width */
+	display: inline-block; /* width will not work for “inline” elements such as “label”. Therefore we need to set it to “inline-block” */
+	text-align: right;
+}	
+
+label[for=TypeofPres_lec], label[for=TypeofPres_lab] {
+	margin-left: 0.25em;
+	text-align: left !important;
+}	
+
+#radiob {
+	margin-left: 20px;
+}
+
+/* we place the id formcol1 in front of the li element in order to limit this
+formatting to the top part of the form */
+#formcol1 li {
+	list-style:none;
+}
+
+li {
+	padding-bottom: 15px; /* creates space between list (li) elements */
+}
+
+/* stylize the text input elements */
+input[type=text] {
+	box-sizing: border-box;
+	border: 1.5px solid dimgray;
+	border-radius: 4px;
+	padding: 6px;
+	width: 33%;
+}
+
+legend {
+	font-weight: bold;
+}
+
+input[type=submit] {
+	box-sizing: border-box;
+	border: 2px solid;
+	border-radius: 4px;
+	padding: 6px;
+	font-size: medium;
+}
+
+input[type=submit]:hover {
+	color: white;
+	background-color: gray;
+	border: 2px solid black;
+}
+
+/* margin (space) below fieldset elements */
+fieldset {
+	margin-bottom: 20px;
+}
+
+select:focus, select:active, input:focus, input:active, input:focus + label,
+input:active + label, label[for]:focus, label[for]:active {
+	color: #FFF !important;
+	background-color: #BB3D2F !important;
+}
+
+/* focus for input text elements that have the class reqfield */
+input[type=text].reqfield:focus{
+	color: #000 !important;
+	background-color: #ffe4e1 !important;
+}
+
+/* focus for input text elements */
+input[type=text]:focus {
+	color: #000 !important;
+	background-color: ghostwhite !important;
+}
+
+input[type=submit]:focus {
+	color: white;
+	background-color: gray !important;
+	border: 2px solid black;
+}
+
+#formcol1 input.reqfield {
+	background:#FF9;
+	border: 1.5px solid red;
+}
+
+
+/* end of form css */
