@@ -49,8 +49,12 @@ main {
 	font-size: medium;
 }
 
-/* Create two equal columns that floats next to each other */
-.column {
+/**/
+/*instagram row/column*/
+/**/
+
+/* Create three equal columns that floats next to each other */
+.column3 {
     margin:auto;
     display: inline-block;
     width: 30%;
@@ -66,10 +70,14 @@ main {
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1000px) {
-    .column {
+    .column3 {
         width: 100%;
     }
 }
+
+/**/
+/*banner image*/
+/**/
 
 .hero-image {
     width: 100%;
@@ -91,3 +99,102 @@ main {
     font-size:40px;
 }
 
+/**/
+/*form elements*/
+/**/
+
+#wrapper {
+	width: 60%;
+	margin-left:auto;
+    margin-right:auto;
+    border: 1.5px solid;
+    border-color: #333;
+	border-radius: 4px;
+    margin-top: 20px;
+}
+
+div#formcol1 {
+	width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+label {
+	margin-right: .3em;
+	display: inline-block; /* width will not work for “inline” elements such as “label”. Therefore we need to set it to “inline-block” */
+	text-align: right;
+}	
+
+/* we place the id formcol1 in front of the li element in order to limit this
+formatting to the top part of the form */
+#formcol1 li {
+	list-style:none;
+}
+
+li {
+	padding: 7.5px; /* creates space between list (li) elements */
+}
+
+/* stylize the text input elements */
+input[type=text] {
+	box-sizing: border-box;
+	border: 1.5px solid dimgray;
+	border-radius: 4px;
+	padding: 6px;
+	width: 50%;
+}
+
+legend {
+	font-weight: bold;
+}
+
+input[type=submit] {
+	box-sizing: border-box;
+	border: 2px solid;
+	border-radius: 4px;
+	padding: 6px;
+	font-size: medium;
+}
+
+input[type=submit]:hover {
+	color: white;
+	background-color: gray;
+	border: 2px solid black;
+}
+
+select:focus, select:active, input:focus, input:active, input:focus + label,
+input:active + label, label[for]:focus, label[for]:active {
+	color: #FFF !important;
+	background-color: #BB3D2F !important;
+}
+
+input[type=submit]:focus {
+	color: white;
+	background-color: gray !important;
+	border: 2px solid black;
+}
+
+/**/
+/*footer stuff*/
+/**/
+
+/* Create five equal columns that floats next to each other */
+.column5 {
+    margin:auto;
+    display: inline-block;
+    width: 12.5%;
+    padding: 10px;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+}
