@@ -2,6 +2,14 @@ h1, h2 {
     color: #333;
 }
 
+h1 {
+    font-weight: 600;
+}
+
+/**/
+/*nav bar*/
+/**/
+
 .topnav {
     text-align: right;
     overflow: hidden;
@@ -32,6 +40,9 @@ h1, h2 {
     background-color: #555;
 }
 
+/**/
+/*main/other*/
+/**/
 main {
     text-align: center;
 }
@@ -59,6 +70,7 @@ main {
     display: inline-block;
     width: 30%;
     padding: 10px;
+    vertical-align: top;
 }
   
 /* Clear floats after the columns */
@@ -95,7 +107,6 @@ main {
     top: 7.5%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
     font-size:40px;
 }
 
@@ -121,6 +132,7 @@ div#formcol1 {
 
 label {
 	margin-right: .3em;
+    width: 5em;
 	display: inline-block; /* width will not work for “inline” elements such as “label”. Therefore we need to set it to “inline-block” */
 	text-align: right;
 }	
@@ -134,8 +146,8 @@ formatting to the top part of the form */
 
 ul {
     list-style-type: none;
+    align-items: center;
 }
-
 
 /* stylize the text input elements */
 input[type=text] {
@@ -152,7 +164,7 @@ legend {
 
 input[type=submit] {
 	box-sizing: border-box;
-	border: 2px solid;
+	border: 1.5px solid;
 	border-radius: 4px;
 	padding: 6px;
 	font-size: medium;
@@ -173,7 +185,7 @@ input:active + label, label[for]:focus, label[for]:active {
 input[type=submit]:focus {
 	color: white;
 	background-color: gray !important;
-	border: 2px solid black;
+	border: 1.5px solid black;
 }
 
 /**/
@@ -186,12 +198,12 @@ input[type=submit]:focus {
     display: inline-block;
     width: 12.5%;
     padding: 10px;
+    vertical-align: top;
 }
-
 
 footer {
     background-color: black;
-    color: white;
+    color: #ddd;
     padding: 10px;
     margin-top: 30px;
     display: table;
@@ -199,4 +211,46 @@ footer {
     margin-left: auto;
     margin-right: auto;
     width:100%;
+}
+
+footer h2 {
+    color: white;
+    font-size: medium;
+}
+
+.column5 img{
+    width:25px;
+    height:25px;
+    margin-bottom:4px;
+}
+
+/**/
+/*contact page*/
+/**/
+
+.follow-list img{
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 5em;
+    margin: 7.5px;
+}
+
+/* Create two columns that float next to each other */
+.column2 {
+    margin:auto;
+    display: inline-block;
+    padding: 5px;
+    vertical-align: center;
+}
+
+iframe{
+    border:0;
+    box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);
+}
+
+#location1 {
+    width: 15%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
