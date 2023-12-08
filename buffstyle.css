@@ -2,6 +2,10 @@ h1, h2 {
     color: #333;
 }
 
+h1 {
+    font-weight: 600;
+}
+
 /**/
 /*nav bar*/
 /**/
@@ -140,8 +144,8 @@ formatting to the top part of the form */
 
 ul {
     list-style-type: none;
+    align-items: right;
 }
-
 
 /* stylize the text input elements */
 input[type=text] {
@@ -195,7 +199,6 @@ input[type=submit]:focus {
     vertical-align: top;
 }
 
-
 footer {
     background-color: black;
     color: #ddd;
@@ -217,4 +220,34 @@ footer h2 {
     width:25px;
     height:25px;
     margin-bottom:4px;
+}
+
+/**/
+/*contact page*/
+/**/
+
+.follow-list img{
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 5em;
+    margin: 7.5px;
+}
+
+/* Create two columns that float next to each other */
+.column2 {
+    margin:auto;
+    display: inline-block;
+    padding: 5px;
+    vertical-align: center;
+}
+
+.column2 iframe{
+    width: 50%;
+}
+
+#location1 {
+    width: 15%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
